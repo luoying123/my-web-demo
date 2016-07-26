@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03CSS边框妙用</title>
+	<style>
+		img {
+			height: 200px;
+			width: 200px;
+			/*去掉默认的边框，兼容性最好的写法  */
+			border: 0 none;
+		}
+		* {
+			padding: 0; margin: 0;
+
+		}
+		.box {
+			width: 0px;
+			height: 0px;
+			border: 100px solid transparent; /*transparent指透明色*/
+			border-top-color: green;
+			/*border-bottom-color: green;*/
+			/*background-color: blue;*/
+		}
+	</style>
+</head>
+<body>
+	<img src="/我的网页/图片/baidu.png" alt="baodu.png">
+	<!-- 用border属性绘制一个三角形 -->
+	<div class="box">
+		
+	</div>
+</body>
+</html>

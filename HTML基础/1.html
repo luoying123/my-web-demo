@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单的demo</title>
+</head>
+<body>
+    <!-- 所有的表单标签必须被包裹在form标签中。 -->
+	<!-- actions属性标签：指向后台的一个地址	 -->
+    <form action="#">
+    <fieldset>
+        <legend>信息表</legend>
+
+        用户名：<input type="text" value="456">	<br>
+        密码：<input type="password"><br>
+        性别：男<input type="radio" name="gender"checked>  女<input type="radio"name="gender"><br>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <select name="" id="">
+        	<option selected value="1">公历</option>
+        	<option value="2">农历</option>
+        </select>
+        <!-- multiple标签代表生成一个展开的下拉列表     -->
+        月份：<select name="" id="">
+        	<option checked value="1">1</option>
+        	<option value="1">2</option>
+        	<option value="1">3</option>
+        	<option value="1">4</option>
+        	<option value="1">5</option>
+        	<option value="1">6</option>
+        	<option value="2">7</option>
+        	<option value="2">8</option>
+        	<option value="2">9</option>
+        	<option value="2">10</option>
+        	<option value="2">11</option>
+        	<option value="2">12</option>
+        </select> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        留言:<br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="提交">
+    </fieldset>
+	</form>
+</body>
+</html>

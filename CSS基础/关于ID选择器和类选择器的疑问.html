@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css demo</title>
+	<style>
+		h1 { color: gray; }
+		p { background-color: pink; }
+		span { font-size: 14px; }
+		/*通配符选择器；*代表选择当前页面中的所有的标签*/
+		* { 
+			font-size: 16px;
+			margin: 0;
+			padding: 0; 
+		}
+		#p1 { font-size: 20px; color: green; }
+		#p2 { font-size: 10px; }
+	</style>
+</head>
+<body>
+	<h1>
+		焦糖布丁的滋味
+	</h1>
+	<p id="p1">
+		焦糖布丁感觉我想象的过于好吃了，还是双皮奶好吃。焦糖布丁有点苦，感觉不是很合自己口味。
+	</p>
+	<span>
+		这是一个文本节标签，嗯。
+	</span>
+	<p id="p2">这是一个段落标签，啦啦啦啦</p>
+	<br>
+	<p>
+		id选择器中ID的属性值具有唯一性，主要是考虑到如果一个页面中有多个属性相同的ID，当你要调用js等脚本语言的时候，多个相同的ID会导致脚本出错。
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>display CSS属性</title>
+	<style>
+		div {
+			background-color: silver;
+			display: inline;  /*可以让块元素转变为内联元素*/
+		}
+		strong {
+			display: block;
+			visibility: hidden;  /*不显示这个标签，但是仍占用页面空间*/
+		}
+		s {
+			display: none;  /*在浏览器中移除该标签且不影响页面布局*/
+		}
+		p {
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 行内元素 -->
+	<span>我是span标签</span>
+	<strong>我是strong标签</strong>
+	<s>我是s标签</s>
+	<!-- 块元素 -->
+	<div>
+		我是一个div标签
+	</div>
+	<!-- ul  ol  li -->
+	<h1>宿管阿姨脾气真大！</h1>
+	<p><img src="/我的网页/88.jpg" alt="88.jpg">我的图片</p>
+</body>
+</html>

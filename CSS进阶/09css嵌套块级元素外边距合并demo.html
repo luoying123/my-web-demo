@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>09css嵌套块级元素外边距合并demo</title>
+	<style>
+		.box1 {
+			border: 1px solid red;
+			background-color: green;
+			height: 200px;
+			width: 200px;
+		}
+		.box2 {
+			height: 200px;
+			width: 200px;
+			background-color: #394;
+			margin-top: 20px;
+		}
+		.box3-child {
+			background-color: #000;
+			margin-top: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 100px;
+			width: 100px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">1</div>
+	<div class="box2">
+
+		<div class="box3-child">
+			child
+		</div>
+		father
+	</div>
+</body>
+</html>
