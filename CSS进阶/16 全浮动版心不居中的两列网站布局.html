@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>15全浮动的方式实现网站布局</title>
+	<title>16 全浮动版心不居中的两列网站布局</title>
 	<style>
 		* {
 			padding: 0;
@@ -12,24 +12,32 @@
 			background-color: silver;
 			border: 1px solid teal;
 			margin-bottom: 10px;
-			width: 1190px;
-			margin: 0 auto 10px auto;
+			/*width: 1190px;
+			margin: 0 auto 10px auto;*/
+			margin-bottom: 10px;
 		}
 		.header, .footer {
 			height: 100px;
 		}
-		.wrap {
+		/*.wrap {
 			overflow: hidden;
-		}
+		}*/
 		.nav, .main {
 			height: 300px;
-			float: left;
+			
 		}
 		.nav {
-			width: 200px;
+			width: 200px;float: left;
 		}
 		.main {
-			width: 986px;  /*1190-202-2*/
+			width: 986px; 
+			 /*1190-202-2*/
+			float: left;
+			margin-left: 202;
+		}
+		.footer {
+			/*清除浮动，就是让当前元素左右两边都不存在浮动元素的时候才把元素放到标准流中显示。*/
+			clear: both;  
 		}
 	</style>
 </head>
@@ -37,15 +45,15 @@
 	<div class="header">
 		header
 	</div>
-	<div class="wrap">
+	<!-- <div class="wrap"> -->
 			
 			<div class="nav">
 				nav
 			</div>
 			<div class="main">
 				main
-			</div>
-	</div>	
+				</div>
+<!-- 	</div> -->
 	<div class="footer">
 		footer
 	</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>22css绝对定位</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.header, .wrap, .close {
+			background-color: teal;
+			border: 1px solid #000;
+		}
+		.header {
+			height: 200px;
+		}
+		.wrap {
+			background-color: #09c;
+			width: 400px;
+		}
+		.close {
+			height: 20px;
+			width: 20px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		被驯服的象
+	</div>
+	<div class="wrap">
+		<div class="txt">
+			迷路的鹿
+		</div>
+		<div class="main">
+			好久没写日记的我
+		</div>	
+		<div class="close">
+			x
+	    </div>
+	</div>
+
+</body>
+</html>

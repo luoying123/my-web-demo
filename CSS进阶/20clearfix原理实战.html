@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20clearfix原理实战</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}	
+		.header, .aside, .main, .footer {
+			border: 1px solid yellow;
+			/*border: 1px solid #000;--- bd+  +tab键快速生成*/
+			background-color: silver;
+			margin-bottom: 10px;
+			height: 200px;
+		}
+
+		.aside {
+			height: 300px;
+			float: left;
+			width: 200px;
+		}
+		.main {
+			float: left;
+			/*margin-left: 202px;*/
+			width: 980px;
+		}
+		.clearfix {
+			display: table; /*触发bfc，div具有包裹性*/
+		}
+		.clearfix:before, .clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.clearfix {
+			_zoom: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+	<div class="wrap clearfix">
+		
+		<div class="aside">
+			aside
+		</div>
+		<div class="main">
+			main
+		</div>
+	</div>
+	<div class="footer">
+		footer
+	</div>
+</body>
+</html>
